@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 레이아웃</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        .main-container{
+            display: flex;
+            text-align: center;
+            justify-content:space-around ;
+            background-color: white;
+        }
+        @media screen and (max-width:992px) {
+            .main-container{
+                display: inline-flex;
+                flex-wrap: wrap;
+
+            }
+            .box{
+                width: 300px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+      }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="box">
+            <h3>HTML</h3>
+            <p>lorem ipsum</p>
+        </div>
+
+        <div class="box">
+            <h3>CSS</h3>
+            <p>lorem ipsum</p>
+        </div>
+
+        <div class="box">
+            <h3>Javascript</h3>
+            <p>lorem ipsum</p>
+        </div>
+
+        <div class="box">
+            <h3>jQuery</h3>
+            <p>lorem ipsum</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
